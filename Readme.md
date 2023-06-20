@@ -2,8 +2,8 @@ DSA prep 100 days
 
 | Days   | Index                                   | Concepts                                          | DSA Links(Leetcode) | ✓     | Remarks |
 | ------ | --------------------------------------- | ------------------------------------------------- | ------------------- | ----- | ------- |
-| Day1   | Recap HTML,CSS                          | Arrays,Hashing, LinkedLists                       |                     | False |         |
-| Day2   | Recap -JS,DSA                           | Basic JavaScript,Stack,Queues                     |                     | False |         |
+| Day1   | Recap HTML,CSS                          | Arrays,Hashing, LinkedLists                       |                     | True |         |
+| Day2   | Recap -JS,DSA                           | Basic JavaScript,Stack,Queues                     |                     | True |         |
 | Day3   | JS,DSA problems                         | SetTimeout, Closures, Hashing - 2 Pr              |                     | False |         |
 | Day4   | JS,DSA problems                         | Event Loop,Asynch, Await ,Binary Search -2 Pr     |                     | False |         |
 | Day5   | JS, DSA problems                        | Higher OrdrFuncs,Arw func ,Binary Search - 2pr    |                     | False |         |
