@@ -2,7 +2,7 @@ Day4 of #100Days
 -
 
 ----------------------------
-Two Problems on Hashing
+Two Problems on Binary Search
 
-1. Search a 2D Matrix
-2. Search inside a Rotated sorted Array
+1. Search inside a Rotated sorted Array
+2. Search in sorted Array size Unknown
