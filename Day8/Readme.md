@@ -2,6 +2,6 @@ Day8 of #100Days
 -
 
 ----------------------------
-one Problems on Dynamic programming
+Understanding of DP and one Problem on Dynamic programming
 
-1.  House Robber
+1.  Coin Change
