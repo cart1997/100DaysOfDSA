@@ -38,7 +38,7 @@ If Greedy doesn’t work, go for a exhaustive way  check among all possible ways
 
 ![img_5.png](img_5.png)
 ￼
-    6 If array of coins are in unsorted order follows:
+    6 ![img_7.png](img_7.png)If array of coins are in unsorted order follows:
 ![img_6.png](img_6.png)
 ￼
 
