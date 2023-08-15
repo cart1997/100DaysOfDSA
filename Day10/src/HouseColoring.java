@@ -1,69 +1,23 @@
 class HouseColoring {
+    public static void main(String[] args) {
+       int[][] costs = {{17,2,17},{16,16,5}, {14,3,19}};
 
-    public int minCost(int[][] costs) {
+       int len = costs.length-1;
 
-        int case1 =  helper(costs,0, 0, 0);
+       int colorR = costs[len-1][0];
+       int colorB = costs[len-1][1];
+       int colorG = costs[len-1][2];
 
-        int case2 =  helper(costs,0, 0, 1);
+       for (int i=len-1; i>=0;i--){
 
-        int case3 =  helper(costs,0, 0, 2);
+           int tempR = colorR;
+           int tempB = colorB;
 
-        return Math.min(case1, Math.min(case2, case3));
+           colorR = costs[i][0]+Math.min(colorG,colorB);
+           colorB = costs[i][1]+Math.min(colorG,tempR);
+           colorG = costs[i][2]+Math.min(tempB,tempR);
 
+       }
+        System.out.println(Math.min(colorB,Math.min(colorB,colorG)));
     }
-
-    private int helper(int[][] costs, int min, int row, int lastColor){
-
-        // base
-
-        if(row == costs.length) return min;
-
-        // logic
-
-        int case1 = Integer.MAX_VALUE;
-
-        int case2 = Integer.MAX_VALUE;
-
-        int case3 = Integer.MAX_VALUE;
-
-        if(lastColor == 0){
-
-            case1= Math.min (
-
-                    helper(costs,min + costs[row][1], row + 1, 1),// blue
-
-                    helper(costs,min + costs[row][2], row + 1, 2)// green
-
-            );
-
-        }
-
-        if(lastColor == 1){
-
-            case2= Math.min (
-
-                    helper(costs,min + costs[row][0], row + 1, 0),// blue
-
-                    helper(costs,min + costs[row][2], row + 1, 2)// green
-
-            );
-
-        }
-
-        if(lastColor == 2){
-
-            case3= Math.min (
-
-                    helper(costs,min + costs[row][0], row + 1, 0),// blue
-
-                    helper(costs,min + costs[row][1], row + 1, 1)// green
-
-            );
-
-        }
-
-        return Math.min(case1, Math.min(case2, case3));
-
-    }
-
-}
+   }
