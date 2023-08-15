@@ -4,9 +4,9 @@ class HouseColoring {
 
        int len = costs.length-1;
 
-       int colorR = costs[len-1][0];
-       int colorB = costs[len-1][1];
-       int colorG = costs[len-1][2];
+       int colorR = costs[len][0];
+       int colorB = costs[len][1];
+       int colorG = costs[len][2];
 
        for (int i=len-1; i>=0;i--){
 
