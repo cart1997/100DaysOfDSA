@@ -6,7 +6,7 @@ public class Recursion {
     // basic rule of fibonacci is func(n) = func(n-1) + func(n-2);
 
     public static void main(String[] args) {
-        int findingNumber = 04;
+        int findingNumber = 10;
 
         System.out.println(fibonacciNumber(findingNumber));
     }

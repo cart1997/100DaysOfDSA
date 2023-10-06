@@ -1,9 +1,10 @@
-import javax.swing.tree.TreeNode;
+
 
 public class BST {
 
     public class TreeNode {
       int val;
+      TreeNode previous;
       TreeNode left;
       TreeNode right;
       TreeNode() {}
@@ -14,17 +15,22 @@ public class BST {
           this.right = right;
       }
     }
+
+    TreeNode prev;
     public boolean isValidBST(TreeNode root) {
 
-        inorder(root);
-        return true;
+        prev =null;
+        return inorder(root);
+
     }
-    private void inorder(TreeNode root){
-        if(root == null) return;
+    private boolean inorder(TreeNode root){
 
-        inorder(root.left);
+        if(root == null) return true;
+        if(inorder(root.left)==false)return false;
+        if( prev != null && root.val <= prev.val) return false;
 
-        inorder(root.right);
+        prev = root;
+        return inorder(root.right);
 
     }
     public static void main(String[] args) {

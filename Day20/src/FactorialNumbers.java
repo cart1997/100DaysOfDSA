@@ -3,7 +3,7 @@ public class FactorialNumbers {
     // by using recursion writing the factorial of numbers
 
     public static void main(String[] args) {
-        int number = 4;
+        int number = 5;
         System.out.println(factorialNumb(number));
     }
 
